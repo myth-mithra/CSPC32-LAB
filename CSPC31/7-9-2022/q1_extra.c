@@ -27,13 +27,13 @@ void main() {
 	}
 	else {
 		int *m2 = (int*)malloc(r2*c2*sizeof(int));
-		int *m = (int*)malloc(raw1*c2*sizeof(int));
+		int *m = (int*)malloc(r2*c2*sizeof(int));
 	
 		printf("Enter matrix-1 elements:\n");
 		
-		for (int i = 0; i < raw1; i++){
+		for (int i = 0; i < r2; i++){
 			for (int j = 0; j < c1; j++){
-				scanf("%d",m1+c1*i+j);
+				scanf("%d",m+c1*i+j);
 			}
 		}
 		
@@ -56,7 +56,7 @@ void main() {
 		
 		printf("Matrix obtained after multiplication:\n");
 		
-		for (int i = 0; i < raw1; i++){
+		for (int i = 0; i < r2; i++){
 			for (int j = 0; j < c2; j++){
 				printf("%d ",*(m+c1*i+j));
 			}
