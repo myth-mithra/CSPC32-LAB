@@ -3,7 +3,8 @@
 
 void main() {
 	int r2,c1,c2;
-	printf("Enter number of rows for matrix 1: ");
+	printf(" matrix 1: ");
+	
 	scanf("%d",&r2);
 	printf("Enter number of columns for matrix 1: ");
 	scanf("%d",&c1);
